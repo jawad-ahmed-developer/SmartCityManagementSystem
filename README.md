@@ -1,5 +1,5 @@
 
-# 🏙️ Smart City Management System
+# My First Java Programming Project: 🏙️ Smart City Management System
 
 A powerful Java desktop application built using **Java Swing** and **JDBC**, designed to efficiently manage a smart city's core entities — citizens, vehicles, buildings, and departments. This project showcases role-based access control, admin activity tracking, search functionality, and a clean, user-friendly interface.
 
@@ -28,14 +28,16 @@ A powerful Java desktop application built using **Java Swing** and **JDBC**, des
 
 ## 📁 Modules Overview
 
-- `LoginScreen.java` – Secure login interface with input validation.
-- `Dashboard.java` – Central navigation panel for module access.
+- `Main.java` – Secure login interface with input validation and Central navigation panel for module access.
 - `CitizenModule.java` – Full management of citizen records.
 - `VehicleModule.java` – CRUD operations for city vehicles.
 - `BuildingModule.java` – Manage building records.
 - `DepartmentModule.java` – Handles departmental data.
-- `AdminHistory.java` – Displays logs of all admin activities.
+- `Admin.java` – Management of Admin records.
 - `JDBCConnector.java` – Handles all JDBC connections and queries.
+- `IDGenerator.java` – Generates Unique and consequent Registration Form ID for each entity.
+- `ButtonRenderer.java` – Renders a button inside a JTable cell for visual display only.
+- `ButtonEditor.java` – Handles button clicks inside a JTable cell and triggers actions like edit or delete.
 
 
 ## 🚀 Highlights of Implementation
