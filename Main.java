@@ -791,7 +791,7 @@ class SmartCity{
             frame.add(btn);
             x += (width + 5); // Space between buttons
         }
-
+        showBackAdminBackButton();
     }
 
     JLabel historyAdminIDSearchErrorLabel ; // Label shown when user enters an invalid admin id in search box
@@ -2594,6 +2594,7 @@ class SmartCity{
         back.addActionListener(e -> showAdminInfoMenu()) ;
         frame.add(back) ;
     }
+
 
     // Method to changes the view of a JButton
     void changesButtonView(JButton button){
