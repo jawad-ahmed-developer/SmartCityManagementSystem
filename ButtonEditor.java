@@ -50,7 +50,6 @@ class ButtonEditor extends DefaultCellEditor {
                 EditableTableModel model = (EditableTableModel) table.getModel();
                 model.setEditableRow(row);
                 table.repaint();
-                JOptionPane.showMessageDialog(frame, "Now you can edit row " + (row + 1));
 
                 saveChangesButton = new JButton("Save Changes") ;
                 saveChangesButton.setBounds(100,200,150,30);
@@ -540,7 +539,7 @@ class ButtonEditor extends DefaultCellEditor {
                             Object object = table.getValueAt(row,2) ;
                             if(object != null){
                                 admin_role = object.toString() ;
-                                if(admin_role.equals("super_admin") && !SmartCity.adminID.equals("super_admin") ){
+                                if(admin_role.equals("super_admin") && !SmartCity.adminRole.equals("super_admin") ){
                                     JOptionPane.showMessageDialog(frame,"You cannot Edit Super Admin");
                                     return;
                                 }
